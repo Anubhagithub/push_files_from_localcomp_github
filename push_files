@@ -1,0 +1,49 @@
+#steps
+echo "# SL_multiclass_supervised" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Anubhagithub/SL_multiclass_supervised.git
+#got error remote login already exist
+#clone the directory 
+git clone https://github.com/Anubhagithub/SL_multiclass_supervised.git
+#unable to access
+git config --global user.email mtech.project19@gmail.com 
+git clone https://github.com/Anubhagithub/SL_multiclass_supervised.git
+git config --unset https.proxy
+git clone https://github.com/Anubhagithub/SL_multiclass_supervised.git
+git config --global --list
+git config --global user.name Anubhagithub
+git config --global user.name Anubhagithub
+git config --global --unset https.proxy
+git config --global --list
+#till here the problem was there
+#use http instead of https
+git config --global --unset http.proxy
+git config --global --list
+git clone https://github.com/Anubhagithub/SL_multiclass_supervised.git
+#cloning done
+#go to the folder where all your files are
+cp *.R /home/nikola/new_def_SL_SV/SL_multiclass_supervised/
+cd ../SL_multiclass_supervised/
+#come to the cloned repository
+git add --all
+git checkout
+git commit -m "my cute R codes"
+git show-ref
+git push origin HEAD:main
+#after giving password if Support for password authentication was removed on August 13, 2021. Please use a personal access token instead error comes
+#generate token, go to github settings, the token is valid for 30 days
+git push origin HEAD:main
+#suppose you make some chnages in the code and to make it reflected in git hub follow these steps
+#come to the directory where your code is
+cd ../featues/
+cp svm2.R /home/nikola/new_def_SL_SV/SL_multiclass_supervised/
+cd ../SL_multiclass_supervised/
+git commit -m "update in SVM"
+git add --all
+git checkout
+git commit -m "update in SVM"
+git push origin HEAD:main
+git log
